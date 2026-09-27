@@ -1,0 +1,16 @@
+.preview { overflow: hidden; border: 1px solid #e9e4de; border-radius: 5px; background: #fffdfb; }
+.preview summary { display: flex; min-height: 39px; align-items: center; justify-content: space-between; gap: 8px; padding: 0 10px; color: #8d460e; cursor: pointer; font-size: 9px; font-weight: 700; list-style: none; }
+.preview summary::-webkit-details-marker { display: none; }
+.preview summary > span { display: inline-flex; align-items: center; gap: 6px; }
+.closeIcon { display: none; color: #675f56; }
+.preview[open] summary { border-bottom: 1px solid #eeeae5; }
+.preview[open] summary > span > svg { display: none; }
+.preview[open] .closeIcon { display: block; }
+.content { padding: 10px; }
+.content > p { margin: 0 0 10px; color: #645d55; font-size: 8px; line-height: 1.45; }
+.content h4 { margin: 10px 0 5px; color: #403a34; font-size: 8px; font-weight: 750; }
+.categoryList, .movementList { display: grid; gap: 5px; padding: 0; margin: 0; list-style: none; }
+.categoryList li, .movementList li { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 5px 0; border-bottom: 1px solid #f0eeeb; color: #514b45; font-size: 8px; }
+.categoryList strong, .movementList strong { color: #403a34; font-size: 8px; white-space: nowrap; }
+.movementList li > span { display: grid; gap: 3px; }
+.movementList small { color: #68615a; font-size: 7px; }
